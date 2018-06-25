@@ -17,7 +17,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
         }
         console.log(JSON.stringify(result.ops,undefined,2));
     });*/
-    db.collection('Users').insertOne({
+
+    /*db.collection('Users').insertOne({
         Name: 'Madhav',
         Age:21,
         Location:"Bangalore"
@@ -28,6 +29,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,client) => {
 
         }
         console.log(JSON.stringify(result.ops,undefined,2));
-    });
+    });*/
     client.close();
 }) ;
